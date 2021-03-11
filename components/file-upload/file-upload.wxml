@@ -1,0 +1,25 @@
+<!--components/file-upload/file-upload.wxml-->
+<view>
+    <view style="margin: 20rpx 0 10rpx 0">
+        <text style="color: red" wx:if="{{required}}">*</text>
+        <text>{{title}}</text>
+    </view>
+    <view class="weui-uploader">
+        <image wx:for="{{imgPaths}}" wx:key="*this"
+               src="{{item}}"
+               class='pic'
+               data-index="{{index}}"
+               bindtap="previewImg"
+        >
+            <icon type='cancel' class="delete-btn" color="red" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+        <video wx:for="{{videoPaths}}" wx:key="*this"
+               src="{{item}}"
+               class="weui-uploader-video"
+        >
+            <icon type='cancel' class="delete-btn" color="red" data-index="{{index}}" catchtap="deleteVideo"></icon>
+        </video>
+        <view class="upload-img-btn" bindtap="fileTypeSelect" wx:if="{{fileNum<9}}">+</view>
+    </view>
+</view>
+

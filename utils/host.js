@@ -1,0 +1,1 @@
+export const host ='https://wwtp.bigdatacd.com:9007/api';

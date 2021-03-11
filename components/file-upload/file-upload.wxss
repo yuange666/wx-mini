@@ -1,0 +1,44 @@
+/* components/file-upload/file-upload.wxss */
+.weui-uploader{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.weui-uploader-video{
+    width: 30%;
+    height: 200rpx;
+    position: relative;
+    margin: 10rpx;
+    border-radius: 20rpx;
+}
+.pic {
+    position:relative;
+    width: 30%;
+    margin: 10rpx;
+    border-radius: 20rpx;
+    overflow: hidden;
+    height: 200rpx;
+}
+
+.delete-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.upload-img-btn {
+    width: 30%;
+    height: 200rpx;
+    margin: 10rpx;
+    text-align: center;
+    line-height: 165rpx;
+    border: 5rpx solid lightgray;
+    font-size: 128rpx;
+    color: lightgray;
+    border-radius: 20rpx;
+    font-weight: 100;
+    box-sizing: border-box;
+}
